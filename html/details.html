@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CANUDILO</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="卡奴迪路年终晚会刮刮乐">
+		<meta name = "format-detection" content = "telephone=no">
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1, minimum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="../css/main.css" />
+		<script type="text/javascript" src="../js/jquery-1.7.1.js" ></script>
+		<script type="text/javascript" src="../js/global.js" ></script>
+		<script type="text/javascript" src="../js/details.js"></script>
+	</head>
+	<body>
+
+		<!--开场动画-->
+		<div class="page prelude" id="page_prelude" style="display: block;">
+
+			<div class="caption">
+				<img src="../images/prelude_caption.png" />
+				<img class="sub" src="../images/prelude_subt.png"/>
+			</div>
+
+			<div class="main" id="prelude_main"  >
+				<img src="../images/pre_gua/1.png" id="img1"  class="item1"/>
+				<img src="../images/pre_gua/2.png" id="img2"  class="item2"/>
+				<img src="../images/pre_gua/3.png" id="img3"  class="item3"/>
+				<img src="../images/pre_gua/4.png" id="img4"  class="item4"/>
+				<img src="../images/pre_gua/5.png" id="img5"  class="item5"/>
+				<img src="../images/pre_gua/6.png" id="img6"  class="item6"/>
+				<img src="../images/pre_gua/7.png" id="img7"  class="item7"/>
+				<img src="../images/pre_gua/8.png" id="img8"  class="item8"/>
+				<img src="../images/pre_gua/9.png" id="img9"  class="item9"/>
+			</div>
+
+			<div class="downcount none" id="prelude_downcount">请在<em>-</em>秒内选择1张奖券，<em>-</em>秒后系统将自动刷新</div>
+
+			<div class="footer">
+				<a class="btn none" id="prelude_begin"><img src="../images/scrath_start.png"></a>
+				<span class="tip" id="prelude_tip">请选择一张刮奖券</span>
+				<a class="opt" href="javascript:;" id="prelude_introduce">活动规则>></a>
+			</div>
+		</div>
+
+		<!--刮奖区域-->
+		<div class="page scratch none" id="page_scratch" style="display: none;" >
+			<div class="caption">
+				<img src="../images/scatch_caption.png" />
+				<h3 id="scratch_user">没有用户名</h3>
+			</div>
+			<div id="gua_border" class="scratch_main">
+				<div class="bg"></div>
+				<canvas id="front" class="front"></canvas>
+			</div>
+			<div class="scratch_desc">
+				划动灰色区域刮奖
+			</div>
+			<div class="result">
+				<a href="prize.html" class="none fl" id="scratch_result">其他人抽奖结果>></a>
+				<a href="javascript:void(0);" class="fr" id="scratch_introduce">活动规则 >></a>
+			</div>
+		</div>
+
+		<!--活动规则-->
+		<div class="page about" id="page_about">
+
+			<img class="capiton" src="../images/introduct.png"/>
+			<table class="details_table" cellspacing="8">
+				<tr>
+					<td valign="top"><img src="../images/xing.png"/></td>
+					<td>注册验证:参与本次抽奖的员工，以全名、部门、手机号注册验证。注册成功的即获得抽奖资格，否则请联系主办部门。</td>
+				</tr>
+				<tr>
+					<td valign="top"><img src="../images/xing.png"/></td>
+					<td>抽奖方式：成功注册后可获得壹次抽奖机会，100%中奖率。为保证每位员工都能参与活动，公平起见，对于使用违规行为参与本次活动抽奖的，人力行政管理中心将取消违规者的抽奖资格并在公司群中公布，而所抽中的奖品也视为作废。</td>
+				</tr>
+				<tr>
+					<td valign="top"><img src="../images/xing.png"/></td>
+					<td>兑奖要求：请保留有效的中奖页面截图，兑奖时需出示核对。</td>
+				</tr>
+				<tr>
+					<td valign="top"><img src="../images/xing.png"/></td>
+					<td>兑奖安排：等待主办部门通知兑奖。</td>
+				</tr>
+			</table>
+
+			<div id="about_tigger" class="trigger">
+				<img src="../images/sliding.png"/>
+			</div>
+		</div>
+
+	</body>
+</html>
