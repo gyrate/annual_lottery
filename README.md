@@ -41,7 +41,7 @@
   [failed]
       {"result":false,"error":"","data":{}}
 
----
+
 4. 开始刮奖 (刮出奖)
 
     http://localhost:3000/canudiloAu/award.ca?type=awrad&mobile=123&id=xcve
@@ -51,7 +51,7 @@
     http://localhost:3000/canudiloAu/award.ca?type=awrad&mobile=123&id=xcveee
   [failed]
       {"result":false,"error":"","data":{}}
----
+
 
 
 5. 查询已刮的奖项
